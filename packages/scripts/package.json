@@ -1,5 +1,5 @@
 {
-  "name": "@[[APP_NAME}}/scripts",
+  "name": "@[[APP_NAME]]/scripts",
   "version": "0.0.0",
   "type": "module",
   "sideEffects": false,
@@ -8,7 +8,7 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@[[APP_NAME}}/core": "workspace:*",
+    "@[[APP_NAME]]/core": "workspace:*",
     "remeda": "2.2.1",
     "sst": "3.1.2"
   }

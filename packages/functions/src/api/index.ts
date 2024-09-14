@@ -1,11 +1,11 @@
 import { OpenAPIHono } from "@hono/zod-openapi";
 import { MiddlewareHandler } from "hono";
 import { logger } from "hono/logger";
-import { VisibleError } from "@[[APP_NAME}}/core/error";
+import { VisibleError } from "@[[APP_NAME]]/core/error";
 import { session } from "../session";
 import { UserApi } from "./user";
 import { handle, streamHandle } from "hono/aws-lambda";
-import { ActorContext } from "@[[APP_NAME}}/core/actor";
+import { ActorContext } from "@[[APP_NAME]]/core/actor";
 import { ZodError } from "zod";
 
 const auth: MiddlewareHandler = async (c, next) => {
@@ -86,7 +86,7 @@ const routes = app.route("/user", UserApi.route).onError((error, c) => {
 app.doc("/doc", () => ({
   openapi: "3.0.0",
   info: {
-    title: "[[APP_NAME}} API",
+    title: "[[APP_NAME]] API",
     version: "0.0.1",
   },
 }));

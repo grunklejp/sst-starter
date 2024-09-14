@@ -1,5 +1,5 @@
 import { bus } from "sst/aws/bus";
-import { User } from "@[[APP_NAME}}/core/user/index";
+import { User } from "@[[APP_NAME]]/core/user/index";
 
 export const handler = bus.subscriber([User.Events.Updated], async (event) => {
   console.log(event.type, event.properties, event.metadata);

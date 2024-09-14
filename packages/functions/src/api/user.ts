@@ -1,7 +1,7 @@
 import { OpenAPIHono, createRoute, z } from "@hono/zod-openapi";
 import { Result } from "./common";
-import { User } from "@[[APP_NAME}}/core/user/index";
-import { useUserID } from "@[[APP_NAME}}/core/actor";
+import { User } from "@[[APP_NAME]]/core/user/index";
+import { useUserID } from "@[[APP_NAME]]/core/actor";
 
 export module UserApi {
   export const UserSchema = z.object(User.Info.shape).openapi("User");

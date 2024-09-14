@@ -2,7 +2,7 @@ import { auth } from "sst/aws/auth";
 import { CodeAdapter } from "sst/auth/adapter/code";
 // import { Adapter } from "sst/auth/adapter";
 import { session } from "./session";
-import { User } from "@[[APP_NAME}}/core/user/index";
+import { User } from "@[[APP_NAME]]/core/user/index";
 import { SESv2Client, SendEmailCommand } from "@aws-sdk/client-sesv2";
 import { Resource } from "sst";
 
