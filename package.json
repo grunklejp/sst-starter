@@ -1,0 +1,19 @@
+{
+  "name": "[[APP_NAME]]",
+  "version": "0.0.0",
+  "sideEffects": false,
+  "scripts": {
+    "dev": "sst dev",
+    "typecheck": "pnpm -F=* typecheck",
+    "sso": "aws sso login --sso-session=[[APP_NAME]] --no-browser"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "sst": "3.1.2"
+  },
+  "devDependencies": {
+    "typescript": "5.5.4"
+  }
+}
